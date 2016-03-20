@@ -1,0 +1,149 @@
+<html>
+  <head>
+    <script type='text/javascript' src='https://www.gstatic.com/charts/loader.js'></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+     google.charts.load('current', {'packages': ['geochart']});
+     google.charts.setOnLoadCallback(drawMarkersMap);
+     
+     function drawMarkersMap() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('number', 'Latitude');
+    data.addColumn('number', 'Longitude');
+    data.addColumn('string', 'Label');
+    data.addColumn('number', 'Value 1');
+    
+    data.addRows([
+
+        [47.6167914,-122.314542, '1700 15th Ave',  1],
+        [47.6129047,-122.3110475, '18th and Union', 1],
+        [47.6030274,-122.3358285,'203 Hoge Building',  1],
+      //['239 Savery',  1],
+        [47.6433086,-122.3473507, '2538 Dexter Ave N , apt.1',  1],
+        [47.6257144,-122.3589337, '27 Roy N.', 2],
+        [47.6213648,-122.362507, '300 Third Ave W, Seattle', 1],
+        [47.6828626,-122.3985477, '3011 NW 75th St.', 1],
+        [47.6483779,-122.2800617, '3400 E Laurelhurst Dr NE, Seattle', 1],
+        [47.6940306,-122.2881907, '3842 NE 90th St.', 1],
+        [47.6100164,-122.3398445, '3rd and Pine outside of McDonalds', 1],
+        [47.5306787,-122.6751236, '420 Club', 1],
+        [47.6187103,-122.3280844, '420 E. Denny Way', 1],
+      //['420 Warehouse', 2],
+        [47.5577075,-122.2868617, '4900 Rainier Ave.', 1],
+      //['911 Media Center', 1],
+        [47.6689257,-122.3815272, 'Ballard Oddfellows', 1],
+        [47.611201,-122.3515667, 'Bell Harbor Conference Center', 7],
+        [47.6080878,-122.339159, 'Benaroya Hall', 6],
+        [47.616813,-122.320086, 'Central Lutheran Church', 1],
+        [47.5599048,-122.28918, 'Columbia City Library, Seattle', 1],
+        [47.6076504,-122.3322767, 'Crown Plaza Hotel', 1],
+        [47.6200494,-122.3302184, 'Downtown REI store', 1],
+        [47.5778602,-122.1893547, 'East Shore Unitarian Church', 1],
+        [47.8168324,-122.3280157, 'Edmonds Community College', 1],
+        [47.6145702,-122.3219183, 'Elliott Bay Bookstore', 1],
+        [47.5212704,-122.3893319, 'Fauntleroy Church', 1],
+        [47.5500672,-122.2893254, 'Filipino Community Center', 7],
+        [45.4949097,-122.964087, 'First Unitarian Church, 1011 SW 12th, Portland', 1],
+        [47.6049722,-122.3320389, 'First United Methodist(it has been removed to other placed since 2008)', 8],
+      //['Four Angels Cafe', 1],
+      //['FPA Cmty Ctr', 1],
+        [47.6076456,-122.3046567, 'Garfield Cmty Ctr', 1],
+        [47.6156929,-122.3361652, 'Gethsamene Lutheran Church', 3],
+        [47.6104849,-122.3431054, 'Gibsons (Second and Stewart)', 1],
+        [47.6089425,-122.3398794, 'Glen Hotel', 1],
+        [47.6187524,-122.3314572, 'Graceland', 1],
+        [47.5781966,-122.3867237, 'Hiawatha Community Center', 1],
+      //['HUB Games Area', 1],
+      //['IBEW Hall', 1],
+        [47.6221,-122.3561768, 'Key Arena', 1],
+        [47.6655974,-122.3335611, 'Keystone Church', 1],
+        [47.6167809,-122.3539579, 'King County Labor Temple', 7],
+        [47.2626892,-122.4477387, 'Landmark Convention Center, Tacoma', 1],
+        [47.6151527,-122.3338971, 'Madison Hotel', 1],
+        [47.5994859,-122.0412719, 'Mary Queen of Peace Parish, Issaquah', 1],
+      //[35.7640921,-83.9527107, 'Maryville Universalist Unitarian Church', 1],
+      //[47.6083634,-122.3351796, 'Mercer Arena', 1],
+      //['Ministerial plenary hall', 1],
+        [47.6118273,-122.3436179, 'Moore Theatre', 1],
+        [47.6213612,-122.362507, 'Mountaineers Building, Fireside Room, 300 3rd Ave. West', 1],
+        [47.6220384,-122.3541892, 'Mural Amphitheatre, Seattle Center', 1],
+        [47.6276176,-122.3387694, 'Museum of History and Industry', 1],
+        [47.650877,-122.3242477, 'Musician\'s Union', 4],
+        [47.556546,-122.2859912, 'New Freeway Hall', 2],
+        [47.602455,-122.3070747, 'New Hope Baptist Church', 1],
+        [47.6995983,-122.3344803, 'North Seattle Community College', 1],
+      //['Northshore United Church of Christ', 1],
+      //['Northwest School', 2],
+      //['Oddfellows Hall', 1],
+      //['on Public Access TV 29/77', 3],
+      //['Pacific Lutheran University', 1],
+      //['Parlour Room', 1],
+        [47.6087544,-122.3348456, 'Plymouth Congregational Church', 3],
+        [47.6338125,-122.3650142, 'Queen Anne Library', 1],
+        [47.5214174,-122.2726598, 'Rainier Beach Lib.', 1],
+        [47.600194,-122.3368937, 'Real Change', 1],
+      //['Renaissance Hotel', 1],
+      //['Savery 239', 1],
+        [47.6162774,-122.3237005, 'SCCC, Seattle Central College', 7],
+        [47.6167809,-122.3539579, 'Seattle Labor Temple', 5],
+      //['Seattle Public Access Channel 29/77', 1],
+      //['Seattle Public Theatre', 1],
+        [47.6090019,-122.3321171, 'Seattle Town Hall', 2],
+        [47.5995798,-122.306056, 'Seattle Vocational institute', 2],
+        [47.6104076,-122.3335652, 'Sheraton Hotel and Towers', 2],
+      // ['Smith 120', 1],
+      // ['Smith 201', 1],
+        [47.6561208,-122.3212448, 'Social Hall (4001 9th Ave NE)', 5],
+        [47.6205063,-122.3514661, 'Space Needle', 1],
+      //['Speakeasy Cafe', 3],
+      //['Tacoma Sheraton Hotel', 1],
+      //['The Central Grind, and Free Seattle Radio, 87.9', 1],
+      //['The Meeting Place', 2],
+      //['The Parlour Room', 2],
+      //['Thompson Hall', 1],
+      //['Town Hall', 3],
+        [47.6657913,-122.3848918, 'Tractor Tavern', 1],
+        [47.6454878,-122.430354, 'Unitarian Church', 3],
+      //['United Methodist Church', 4],
+        [47.6654217,-122.31589, 'University Baptist Church', 6],
+        [47.6553351,-122.3057086, 'UW', 37],
+      //['Vancouver, BC', 1],
+      //['Convention Center', 1],
+      //['Gethsemane Lutheran Church', 1],
+      //['Good Shephard Center', 2],
+      // ['Lesbian Resource Center', 2],
+      // ['Mercer Ste. Comm. Ctr.', 1],
+      // ['PFT Office', 9],
+        [47.6097199,-122.3465704, 'Pike Place Market', 1],
+        [47.6134321,-122.3541447, 'Port of Seattle', 2],
+        [47.6105941,-122.3194171, 'SU', 10],
+      // ['St. James Cathedral', 1],
+      // ['3011 NW 75th St', 1],
+      // ['Capital Hill Reservoir', 1],
+        [47.3329056,-122.2709957, 'Emerald Downs, Auburn', 3],
+        [47.0718574,-122.9788314, 'Evergreen State College', 5],
+        [47.5903059,-122.3324359, 'King County Council Hall', 1],
+        [47.5216498,-122.3163515, 'Machinists Hall', 3],
+        [47.621614,-122.3642797, 'Mountaineers Building, Fireside Room, 300 4rd Ave. West', 1],
+        [47.435511,-122.2963027, 'SeaTac DoubleTree Inn', 2],
+        [47.6125387,-122.3215792, 'St. Mark\'s Episcopal Cathedral, 1245 10th Ave. Seattle', 3],
+        [47.6197326,-122.3484306, 'Teamsters Union (553 John St)', 3],
+        [47.5228482,-122.4100856, 'The Little Theater', 6]
+    ]);
+
+      var options = {
+      resolution: 'metros',
+        region: 'US-WA',
+        displayMode: 'markers',
+        colorAxis: {colors: ['green', 'blue']}
+      };
+
+      var chart = new google.visualization.GeoChart(document.getElementById('chart_div'));
+      chart.draw(data, options);
+    };
+    </script>
+  </head>
+  <body>
+    <div id="chart_div" style="width: 20000px; height: 60000px;"></div>
+  </body>
+</html>
